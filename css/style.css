@@ -21,6 +21,11 @@
   font-weight: 700;
   font-display: swap;
 }
+html {
+  /* 스크롤 동작을 부드럽게 만듭니다. */
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
 
 /* 글로벌 변수 */
 :root {

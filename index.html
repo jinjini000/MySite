@@ -23,12 +23,36 @@
       </div>
       <nav class="header__nav">
         <ul class="header__menu">
-          <li><a href="#home" class="header__menu__item active">홈으로</a></li>
-          <li><a href="#about" class="header__menu__item">jinjini000</a></li>
-          <li><a href="#skills" class="header__menu__item">기술</a></li>
-          <li><a href="#work" class="header__menu__item">포트폴리오</a></li>
-          <li><a href="#license" class="header__menu__item">자격증</a></li>
-          <li><a href="#contact" class="header__menu__item">연락처</a></li>
+          <li>
+            <a href="#home" class="header__menu__item active" id="menuHome"
+              >홈으로</a
+            >
+          </li>
+          <li>
+            <a href="#about" class="header__menu__item" id="menuAbout"
+              >jinjini000</a
+            >
+          </li>
+          <li>
+            <a href="#skills" class="header__menu__item" id="menuSkills"
+              >기술</a
+            >
+          </li>
+          <li>
+            <a href="#work" class="header__menu__item" id="menuWork"
+              >포트폴리오</a
+            >
+          </li>
+          <li>
+            <a href="#license" class="header__menu__item" id="menuLicense"
+              >자격증</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="header__menu__item" id="menuContact"
+              >연락처</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -42,7 +66,8 @@
           alt="logo"
         />
         <h2 class="home__title">
-          안녕하세요!! <br />
+          <p id="home__title">안녕하세요!! &nbsp;</p>
+          <br />
           <strong class="home__title--strong">jinjini000입니다.</strong>
         </h2>
         <p class="home__description">새싹 AI 개발자입니다.</p>
@@ -187,28 +212,28 @@
           <p class="description">Projects</p>
           <ul class="categories">
             <li>
-              <button class="category category--selected">
+              <button class="category category--selected" id="work_all">
                 All<span class="category__count">10</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" id="work_frontend">
                 Front-end<span class="category__count">3</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" id="work_mobile">
                 Mobile<span class="category__count">5</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" id="work_backend">
                 Back-end<span class="category__count">2</span>
               </button>
             </li>
           </ul>
           <ul class="projects">
-            <li class="project">
+            <li class="project frontend">
               <a href="#" target="_blank">
                 <img class="project__img" src="./images/최정훈.webp" alt="" />
                 <div class="project__metadata">
@@ -217,7 +242,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project frontend">
               <a href="#" target="_blank">
                 <img class="project__img" src="./images/최정훈.webp" alt="" />
                 <div class="project__metadata">
@@ -226,7 +251,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project frontend">
               <a href="#" target="_blank">
                 <img class="project__img" src="./images/최정훈.webp" alt="" />
                 <div class="project__metadata">
@@ -235,7 +260,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project frontend">
               <a href="#" target="_blank">
                 <img class="project__img" src="./images/최정훈.webp" alt="" />
                 <div class="project__metadata">
@@ -244,7 +269,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project frontend">
               <a href="#" target="_blank">
                 <img class="project__img" src="./images/최정훈.webp" alt="" />
                 <div class="project__metadata">
@@ -253,7 +278,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project backend">
               <a href="#" target="_blank">
                 <img class="project__img" src="./images/최정훈.webp" alt="" />
                 <div class="project__metadata">
@@ -262,7 +287,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project backend">
               <a href="#" target="_blank">
                 <img class="project__img" src="./images/최정훈.webp" alt="" />
                 <div class="project__metadata">
@@ -271,7 +296,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project backend">
               <a href="#" target="_blank">
                 <img class="project__img" src="./images/최정훈.webp" alt="" />
                 <div class="project__metadata">
@@ -283,7 +308,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project mobile">
               <a href="#" target="_blank">
                 <img class="project__img" src="./images/최정훈.webp" alt="" />
                 <div class="project__metadata">
@@ -295,7 +320,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project mobile">
               <a href="#" target="_blank">
                 <img class="project__img" src="./images/김도형.webp" alt="" />
                 <div class="project__metadata">
@@ -383,5 +408,6 @@
         <p>&copy; jinjini000 - ALL rights reserved</p>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
